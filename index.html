@@ -7,12 +7,231 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, black, #2c3e50);
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid #fff;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #f4f4f9;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #3498db;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1 style="text-align:center">Welcome to My Portfolio</h1>
+            <h1>Welcome to My Portfolio</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -28,12 +247,12 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2 style="text-align:center">Hi, I'm <span class="highlight">SIddharth Kandari</span></h2>
-                <p>A passionate <span class="highlight">[Your Profession]</span> dedicated to building amazing digital experiences.</p>
+                <h2>Hi, I'm <span class="highlight">Siddharth Kandari</span></h2>
+                <p>A passionate <span class="highlight">Computer-Secience Engineer</span> dedicated to building amazing digital experiences.</p>
                 <a href="#about" class="btn">Learn More About Me</a>
             </div>
-            <div style="text-align:center">
-                <img src="sean.jpg" alt="Your Image" width="300px" >
+            <div>
+                <img src="sean.jpg" alt="Your Image" width="300px">
             </div>
         </div>
     </section>
@@ -44,7 +263,7 @@
             <h2>About Me</h2>
             <p>
                 I'm a creative and detail-oriented developer with a passion for solving problems and building user-friendly applications.
-                With a strong foundation in <span class="highlight">[Your Skills]</span>, I strive to create impactful solutions that make a difference.
+                With a strong foundation in <span class="highlight">FrontEnd,BackEnd,DSA,ML</span>, I strive to create impactful solutions that make a difference.
             </p>
             <a href="about.html" class="btn">Read More</a>
         </div>
@@ -89,7 +308,7 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2023 Siddharth Kandari. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
